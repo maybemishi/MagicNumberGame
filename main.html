@@ -75,7 +75,7 @@
         </div>
         <div class="step" id="step5">
             <p> Subtract your original number from the result </p>
-            <button onclick="nextStep(6)">Reveal</button>
+            <button onclick="nextStep(6)">Next</button>
         </div>
         <div class="step" id="step6">
             <p> Multiply your result by 2 </p>
@@ -96,7 +96,7 @@
 
         function revealResult() {
             const finalAnswer = 9;
-            document.getElementById('result').innerText = `The number you are thinking of is: ${finalAnswer}`;
+            document.getElementById('result').innerText = `The number in your mind is: ${finalAnswer}`;
             document.querySelectorAll('.step').forEach(function(el) {
                 el.classList.remove('active');
             });
